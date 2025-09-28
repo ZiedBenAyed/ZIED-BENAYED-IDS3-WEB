@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+li span {
+  flex: 1; /* occupe tout l'espace sauf celui réservé aux boutons */
+}
+
+li .btn-group {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0; /* empêche le groupe de rétrécir */
+}
+
+li button {
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+li button.terminer {
+  background-color: green;
+  color: white;
+}
+
+li button.supprimer {
+  background-color: red;
+  color: white;
+}

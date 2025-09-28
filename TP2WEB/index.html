@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion de Tâches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ma To-Do List</h1>
+
+    <!-- Zone de saisie et boutons -->
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+      <button id="addBtn">Ajouter</button>
+    </div>
+
+    <!-- Recherche -->
+    <input type="text" id="searchInput" placeholder="Rechercher une tâche...">
+    <button id="clearAll">Tout supprimer</button>
+    <!-- Liste des tâches -->
+    <ul id="taskList"></ul>
+
+    <!-- Compteur -->
+    <div id="compteur"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
